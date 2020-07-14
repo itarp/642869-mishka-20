@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Таранов](https://up.htmlacademy.ru/adaptive/20/user/642869).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Колотович](https://up.htmlacademy.ru/adaptive/20/user/225353).
 
 ---
 
