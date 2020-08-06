@@ -23,6 +23,61 @@
       </p>
     </nav>
   </header>
+  <main class="page-main">
+    <header class="page-main__header">
+      <h1 class="page-main__heading">Вязание на заказ</h1>
+    </header>
+    <form class="page-main__order-form order-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="order-form__note">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <fieldset class="order-form__fieldset">
+        <legend class="order-form__title">Тип</legend>
+        <input class="order-form__radio" id="id-accessory" type="radio" name="type" value="accessory" checked>
+        <label class="order-form__label" for="id-accessory">Аксессуар для интерьера</label>
+        <input class="order-form__radio" id="id-toy" type="radio" name="type" value="toy">
+        <label class="order-form__label" for="id-toy">Детская игрушка</label>
+      </fieldset>
+      <fieldset class="order-form__fieldset">
+        <legend class="order-form__title">Цвет</legend>
+        <input class="order-form__checkbox" id="id-white" type="checkbox" name="white" checked>
+        <label class="order-form__label" for="id-white">Белый</label>
+        <input class="order-form__checkbox" id="id-gray" type="checkbox" name="gray" checked>
+        <label class="order-form__label" for="id-gray">Серый</label>
+        <input class="order-form__checkbox" id="id-tiffany" type="checkbox" name="tiffany">
+        <label class="order-form__label" for="id-tiffany">«Тиффани»</label>
+        <input class="order-form__checkbox" id="id-black" type="checkbox" name="black">
+        <label class="order-form__label" for="id-black">Черный</label>
+        <input class="order-form__checkbox" id="id-pink" type="checkbox" name="pink">
+        <label class="order-form__label" for="id-pink">Розовый</label>
+        <input class="order-form__checkbox" id="id-orange" type="checkbox" name="orange">
+        <label class="order-form__label" for="id-orange">Оранжевый</label>
+      </fieldset>
+      <fieldset class="order-form__fieldset">
+        <legend class="order-form__title">ФИО</legend>
+        <label class="order-form__label" for="id-name">Имя:</label>
+        <input class="order-form__input" id="id-name" type="text" name="buyers-name" placeholder="Введите ваше имя*" required>
+        <label class="order-form__label" for="id-surname">Фамилия:</label>
+        <input class="order-form__input" id="id-surname" type="text" name="buyers-surname" placeholder="Укажите фамилию*" required>
+        <label class="order-form__label" for="id-patronymic">Отчество:</label>
+        <input class="order-form__input" id="id-patronymic" type="text" name="buyers-patronymic" placeholder="Отчество, если желаете">
+      </fieldset>
+      <fieldset class="order-form__fieldset">
+        <legend class="order-form__title">Тел</legend>
+        <input class="order-form__input order-form__input--phone" id="id-phone" type="tel" name="buyers-phone" placeholder="+7 XXX XXX XX XX*" required pattern="+[7]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}">
+        <label class="order-form__label order-form__label--phone" for="id-phone"></label>
+      </fieldset>
+      <fieldset class="order-form__fieldset">
+        <legend class="order-form__title">e-mail</legend>
+        <label class="order-form__label order-form__label--email" for="id-email"></label>
+        <input class="order-form__input order-form__input--email" id="id-email" type="email" name="buyers-email" placeholder="Ваш Email*" required>
+      </fieldset>
+      <fieldset class="order-form__fieldset">
+        <legend class="order-form__title">Доп</legend>
+        <textarea class="order-form__input-description" name="buyers-description" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </fieldset>
+      <p class="order-form__footnote">*Поля обязательны для заполнения</p>
+      <button class="order-form__btn btn" type="submit">Отправить заказ</button>
+    </form>
+  </main>
   <footer class="page-footer">
     <ul class="page-footer__list social">
       <li class="social__list-item">
